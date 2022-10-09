@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+  </head>
+  <body style="margin: 0">
+    <!--Navbar with HTML only-->
+    <header>
+      <div style="background-color: grey">
+        <!--List with inline style and no bullet list-->
+        <div style="display: flex; justify-content: space-between">
+          <ul
+            style="
+              list-style-type: none;
+              margin: 0;
+              padding: 20px;
+              overflow: hidden;
+            "
+          >
+            <li style="float: left">
+              <a
+                href="index.html"
+                style="
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                "
+                >Home Site</a
+              >
+            </li>
+            <li style="float: left; margin-left: 120px">
+              <a
+                href="products.html"
+                style="
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                "
+                >Category 1</a
+              >
+            </li>
+            <li style="float: left">
+              <a
+                href="cart.html"
+                style="
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                "
+                >Category 2</a
+              >
+            </li>
+            <li style="float: left">
+              <a
+                href="cart.html"
+                style="
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                "
+                >Category 3</a
+              >
+            </li>
+          </ul>
+          <ul
+            style="
+              list-style-type: none;
+              margin: 0;
+              padding: 20px;
+              overflow: hidden;
+            "
+          >
+            <li style="float: right">
+              <a
+                href="cart.html"
+                style="
+                  display: block;
+                  color: rgb(24, 24, 24);
+                  text-align: center;
+                  padding: 14px 16px;
+                  font-weight: bold;
+                "
+                ><img
+                  src="https://img.icons8.com/ios/50/000000/shopping-cart--v1.png"
+                  width="20"
+                  height="20"
+                  style="margin-right: 10px"
+                />Cart (1)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!--Cart-->
+    <section style="margin-bottom: 180px">
+      <div style="margin: 30px">
+        <div style="display: flex; justify-content: space-between">
+          <div style="width: 70%">
+            <!--Success Order Logo-->
+            <div style="display: flex">
+              <img
+                src="https://img.icons8.com/ios/50/000000/checked-2--v1.png"
+                width="100"
+                height="100"
+              />
+              <div style="margin-left: 20px">
+                <!--Thankyou for Order-->
+                <p style="font-size: 16px; margin-top: 20px">
+                  Order MKP/123/0393/2392
+                </p>
+                <h1 style="margin-top: -8px; font-size: 28px">
+                  Thankyou, Naufal
+                </h1>
+              </div>
+            </div>
+            <hr />
+            <div>
+              <p style="font-size: 16px; margin-top: 20px">
+                Your order is confirmed and will be shipped to your address
+              </p>
+              <p
+                style="font-size: 16px; margin-top: 20px; padding-bottom: 10px"
+              >
+                We've accepted your order and we're getting it ready.
+              </p>
+            </div>
+            <hr />
+            <!--Customer Information-->
+            <div>
+              <h1 style="font-size: 28px; margin-top: 20px">
+                Customer Information
+              </h1>
+              <div style="display: flex; justify-content: space-between">
+                <div style="width: 50%">
+                  <h3>Shipping Address</h3>
+                  <p style="font-size: 16px">Naufal</p>
+                  <a href="#">
+                    <p style="font-size: 16px">
+                      Villa Pertiwi blok i6 No.7 Jl. Ephorbia 3, Cilodong, Depok
+                    </p>
+                  </a>
+                </div>
+                <div style="width: 50%">
+                  <h3>Billing Address</h3>
+                  <p style="font-size: 16px">Naufal</p>
+                  <a href="#">
+                    <p style="font-size: 16px">
+                      Villa Pertiwi blok i6 No.7 Jl. Ephorbia 3, Cilodong, Depok
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 24px;
+                "
+              >
+                <div style="width: 50%">
+                  <h3>Shipping Method</h3>
+                  <p style="font-size: 16px">Sicepat Express (2-3 days)</p>
+                </div>
+                <div style="width: 50%">
+                  <h3>Payment Method</h3>
+                  <!--Visa Logo & Info-->
+                  <div style="display: flex">
+                    <img
+                      src="https://img.icons8.com/ios/50/000000/visa.png"
+                      width="30"
+                      height="30"
+                    />
+                    <div style="margin-left: 20px">
+                      <p style="font-size: 16px; margin-top: 5px">
+                        Ending in 1234 -- Rp. 150.000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="width: 30%; background-color: #f4f4f4; margin-left: 20px">
+            <h2 style="margin-left: 16px">Summary (1 item)</h2>
+            <table style="padding: 16px; width: 100%">
+              <tr>
+                <td>Subtotal</td>
+                <td>Rp. 150.000</td>
+              </tr>
+              <tr>
+                <td>Shipping</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Ext Taxes</td>
+                <td>-</td>
+              </tr>
+            </table>
+            <hr style="width: 90%" />
+            <!--Input Voucher or Gift Card-->
+            <div style="margin-left: 20px; margin-right: 20px">
+              <div>
+                <p style="font-size: 16px; margin-top: 5px">
+                  Voucher or Gift Card
+                </p>
+              </div>
+              <div style="display: flex">
+                <input
+                  type="text"
+                  placeholder="Enter Code"
+                  style="
+                    width: 70%;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: 1px solid #dcdcdc;
+                    padding-left: 10px;
+                  "
+                />
+                <button
+                  style="
+                    margin-left: 10px;
+                    width: 30%;
+                    height: 35px;
+                    border-radius: 5px;
+                    border: 1px solid #dcdcdc;
+                    padding-left: 10px;
+                    background-color: #fff;
+                  "
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+            <hr style="width: 90%" />
+            <!--Total Harga-->
+            <table style="padding: 16px; width: 100%">
+              <tr>
+                <td style="font-weight: bold">Total -----</td>
+                <td style="font-weight: bold">Rp. 150.000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer with left and right side-->
+    <footer style="background-color: grey">
+      <div style="display: flex; justify-content: space-between">
+        <div style="width: 70%">
+          <div style="margin-top: 50px">
+            <ul style="list-style-type: none; margin: 0; overflow: hidden">
+              <li style="float: left">
+                <a
+                  href="index.html"
+                  style="
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                  "
+                  >Home Site</a
+                >
+              </li>
+              <li style="float: left">
+                <a
+                  href="products.html"
+                  style="
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                  "
+                  >Category 1</a
+                >
+              </li>
+              <li style="float: left">
+                <a
+                  href="cart.html"
+                  style="
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                  "
+                  >Category 2</a
+                >
+              </li>
+              <li style="float: left">
+                <a
+                  href="cart.html"
+                  style="
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                  "
+                  >Category 3</a
+                >
+              </li>
+            </ul>
+            <!--Visa Logo Image-->
+            <div style="margin-left: 50px">
+              <img
+                src="https://img.icons8.com/color/48/000000/visa.png"
+                width="40"
+                height="40"
+                style="margin-right: 10px"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/mastercard.png"
+                width="40"
+                height="40"
+                style="margin-right: 10px"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/paypal.png"
+                width="40"
+                height="40"
+                style="margin-right: 10px"
+              />
+            </div>
+          </div>
+        </div>
+        <div style="width: 30%">
+          <!--Join to Newslatter (small size)-->
+          <div style="margin: 20px">
+            <h3 style="color: white">Join to Newslatter</h3>
+            <input
+              type="text"
+              placeholder="Enter your email"
+              style="
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+              "
+            />
+            <button
+              style="
+                background-color: #f4f4f4;
+                border: 2px solid black;
+                color: black;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                width: 100%;
+              "
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

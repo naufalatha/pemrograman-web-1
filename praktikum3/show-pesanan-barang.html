@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Pesanan Barang</title>
+  </head>
+
+  <body>
+    <div style="margin: 20px 60px 0px 60px">
+      <!--Navbar Vertical with HTML style-->
+      <div style="border: 1px solid #000; width: 100%; margin: 0 auto">
+        <!--Horizontal List with justifying content to the space-between-->
+        <ul
+          style="
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0px 30px 0px 30px;
+          "
+        >
+          <li><a href="pesanan-barang.html">Home</a></li>
+          <li><a href="#">Generate Link</a></li>
+          <li><a href="#">Transaction History</a></li>
+          <li><a href="#">Policy</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+
+      <!--Two Section Display-->
+      <div
+        style="display: flex; justify-content: space-between; margin-top: 45px"
+      >
+        <!--Left Section-->
+        <div style="width: 30%">
+          <!--Upload Image-->
+          <img
+            src="https://www.apple.com/v/macbook-pro-13/o/images/overview/compare/compare_mba__bkn24vmm59py_large.png"
+            alt="Macbook Pro"
+            style="width: 70%; margin-bottom: 20px"
+          />
+        </div>
+
+        <!--Right Section-->
+        <div style="width: 70%">
+          <form action="">
+            <!--Table-->
+            <table style="width: 100%">
+              <tr>
+                <td>
+                  <label for="name">Title Here :</label>
+                </td>
+                <td>
+                  <p>Macbook Pro M2 2022</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="deskripsi">Deskripsi Barang :</label>
+                </td>
+                <td>
+                  <p>
+                    Year: 2022 <br />
+                    Model: MB Pro <br />
+                    Condition: Mint
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="amount">Total Amount</label>
+                </td>
+                <td>
+                  <p>Rp. 25.000.000</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="pay">Pay to</label>
+                </td>
+                <td>
+                  <p>123-456-789-0</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="type">Payment Type</label>
+                </td>
+                <td>
+                  <select id="type">
+                    <option value="bank">Bank Transfer</option>
+                    <option value="gopay">GoPay</option>
+                    <option value="ovo">OVO</option>
+                    <option value="dana">Dana</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="accname">Account Holder</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="accname"
+                    placeholder="Isi nama pemilik akun..."
+                    style="width: 50%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="accnumber">Account Number</label>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="accnumber"
+                    placeholder="Isi nomor akun..."
+                    style="width: 70%"
+                  />
+                  <br />
+                  <!--Checkbox-->
+                  <input type="checkbox" id="" />
+                  <label for="">Send to Mobile Phone</label> <br />
+                  <input type="checkbox" id="" />
+                  <label for="">Email me copy of transaction</label> <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="send_mobile">Send to mobile phone</label>
+                </td>
+                <td>
+                  <input type="number" id="send_mobile" style="width: 50%" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="send_email">Send to email</label>
+                </td>
+                <td>
+                  <input type="text" id="send_email" style="width: 50%" />
+                </td>
+              </tr>
+            </table>
+            <!--Link with button style center-->
+            <br />
+            <br />
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: #fff;
+                background-color: green;
+                padding: 5px 20px 5px 20px;
+                border-radius: 5px;
+              "
+            >
+              Pay using Quidlink
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

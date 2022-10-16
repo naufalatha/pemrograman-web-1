@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan Barang</title>
+  </head>
+
+  <body>
+    <div style="margin: 20px 60px 0px 60px">
+      <!--Navbar Vertical with HTML style-->
+      <div style="border: 1px solid #000; width: 100%; margin: 0 auto">
+        <!--Horizontal List with justifying content to the space-between-->
+        <ul
+          style="
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0px 30px 0px 30px;
+          "
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Generate Link</a></li>
+          <li><a href="#">Transaction History</a></li>
+          <li><a href="#">Policy</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+
+      <!--Two Section Display-->
+      <div
+        style="display: flex; justify-content: space-between; margin-top: 45px"
+      >
+        <!--Left Section-->
+        <div style="width: 30%">
+          <!--Upload Image-->
+          <img
+            src="https://www.apple.com/v/macbook-pro-13/o/images/overview/compare/compare_mba__bkn24vmm59py_large.png"
+            alt="Macbook Pro"
+            style="width: 70%; margin-bottom: 20px"
+          />
+          <input type="file" name="" id="" />
+        </div>
+
+        <!--Right Section-->
+        <div style="width: 70%">
+          <form action="">
+            <!--Table-->
+            <table style="width: 100%">
+              <tr>
+                <td>
+                  <label for="name">Title Here</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Macbook Pro M2 2022"
+                    style="width: 70%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="deskripsi">Deskripsi Barang</label>
+                </td>
+                <td>
+                  <textarea
+                    id=""
+                    cols="60"
+                    rows="10"
+                    placeholder="Ketik deskripsi barang..."
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="accnumber">Account Number</label>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="accnumber"
+                    placeholder="Isi nomor akun..."
+                    style="width: 70%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="bank-list">Bank</label>
+                </td>
+                <td>
+                  <select id="bank-list">
+                    <option value="">Pilih Kategori</option>
+                    <option value="">HSBC</option>
+                    <option value="">BCA</option>
+                    <option value="">Mandiri</option>
+                    <option value="">Jago</option>
+                    <option value="">Lainnya</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="accname">Account Holder</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="accname"
+                    placeholder="Isi nama pemilik akun..."
+                    style="width: 50%"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="num_trx">Transaction</label>
+                </td>
+                <td>
+                  <select id="num_trx">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                  </select>
+                  <br />
+                  <!--Notes-->
+                  <small
+                    >*If the transaction is for 3 person, choose 3 from the
+                    droplist</small
+                  >
+                  <br />
+                  <!--Checkbox-->
+                  <input type="checkbox" id="" />
+                  <label for="">Send to Mobile Phone</label> <br />
+                  <input type="checkbox" id="" />
+                  <label for="">Send to Email</label> <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="send_mobile">Send to mobile phone</label>
+                </td>
+                <td>
+                  <input type="number" id="send_mobile" style="width: 50%" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="send_email">Send to email</label>
+                </td>
+                <td>
+                  <input type="text" id="send_email" style="width: 50%" />
+                </td>
+              </tr>
+            </table>
+            <!--Link with button style center-->
+            <br />
+            <br />
+            <a
+              href="show-pesanan-barang.html"
+              style="
+                text-decoration: none;
+                color: #fff;
+                background-color: green;
+                padding: 5px 20px 5px 20px;
+                border-radius: 5px;
+              "
+            >
+              Generate Nabr Link
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

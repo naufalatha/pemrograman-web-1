@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: yellow;
+  height: 15vh;
+  line-height: 15vh;
+}
+
+main {
+  display: flex;
+  height: 70vh;
+  line-height: 70vh;
+}
+
+article {
+  order: 2;
+  flex: 3;
+}
+
+aside {
+  order: 3;
+  flex: 1;
+  background-color: pink;
+}
+
+nav {
+  order: 1;
+  flex: 1;
+  background-color: yellowgreen;
+}

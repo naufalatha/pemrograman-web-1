@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitung</title>
+  </head>
+  <body>
+    <h2>Menghitung Jumlah Dua Bilangan</h2>
+    <form name="formInput">
+      <input
+        type="number"
+        id="firstNumber"
+        onchange="hitung()"
+        placeholder="Masukkan angka 1"
+      />
+      <br />
+      <span>+</span> <br />
+      <input
+        type="number"
+        id="secondNumber"
+        onchange="hitung()"
+        placeholder="Masukkan angka 2"
+      />
+      <br />
+      <span>=</span> <br />
+      <input
+        type="number"
+        id="result"
+        onchange="hitung()"
+        placeholder="Hasil"
+      />
+    </form>
+
+    <script>
+      function hitung() {
+        let angka1 = parseInt(formInput.firstNumber.value);
+        let angka2 = parseInt(formInput.secondNumber.value);
+
+        let hasil = angka1 + angka2;
+
+        formInput.result.value = hasil;
+      }
+    </script>
+  </body>
+</html>

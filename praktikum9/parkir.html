@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parkir Mall ITC Depok</title>
+  </head>
+  <body>
+    <h2>Harga Parkir Mall ITC Depok</h2>
+    <label for="in">Jam Masuk :</label>
+    <input type="number" id="in" />
+    <br />
+    <label for="in">Jam Keluar :</label>
+    <input type="number" id="out" />
+    <br />
+    <span id="durasi"></span>
+    <br />
+    <span id="harga"></span>
+    <br />
+    <button type="button" onclick="hitungParkir()">Hitung</button>
+
+    <script>
+      function hitungParkir() {
+        let jamMasuk = document.getElementById("in").value;
+        let jamKeluar = document.getElementById("out").value;
+        let durasi = jamKeluar - jamMasuk;
+
+        let tarifAwal = 3000;
+        let selisihWaktu = Math.round(durasi - 2);
+        let tarifLanjut = selisihWaktu * 1000;
+
+        let totalHarga = tarifAwal + tarifLanjut;
+
+        document.getElementById("durasi").innerHTML =
+          "Durasi : " + durasi.toFixed(2) + " jam";
+
+        document.getElementById("harga").innerHTML = "Harga : Rp " + totalHarga;
+      }
+    </script>
+  </body>
+</html>
